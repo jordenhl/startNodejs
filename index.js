@@ -4,7 +4,7 @@ var app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
-app.get('/hello', function (req, res) {
+app.get('/', function (req, res) {
    let name = req.query.name || "<unknown>";
    res.send(`Hello there ${name}`);
 });
